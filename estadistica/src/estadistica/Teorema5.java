@@ -5,16 +5,22 @@
  */
 package estadistica;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+
 /**
  *
  * @author Admin
  */
 public class Teorema5 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Teorema5
-     */
-    public Teorema5() {
+    FondoPanel5 fondo = new FondoPanel5();
+    
+    public Teorema5() 
+    {
+        this.setContentPane(fondo);
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -105,3 +111,19 @@ public class Teorema5 extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
+ class FondoPanel5 extends JPanel
+    {
+        private Image imagen;
+        
+        @Override
+        public void paint(Graphics g)
+        {
+            imagen = new ImageIcon(getClass().getResource("/imagenes/fondo3.gif")).getImage();
+            
+            g.drawImage(imagen,0, 0, getWidth(), getHeight(),this);
+            
+            setOpaque(false);
+            
+            super.paint(g);
+        }
+    }

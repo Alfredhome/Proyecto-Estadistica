@@ -1,20 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package estadistica;
 
-/**
- *
- * @author Admin
- */
+package estadistica;
+import java.awt.Graphics;
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+
 public class Teorema2 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Teorema2
-     */
-    public Teorema2() {
+    FondoPanel2 fondo = new FondoPanel2();
+    
+    public Teorema2() 
+    {
+        this.setContentPane(fondo);
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -105,3 +103,19 @@ public class Teorema2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
+class FondoPanel2 extends JPanel
+    {
+        private Image imagen;
+        
+        @Override
+        public void paint(Graphics g)
+        {
+            imagen = new ImageIcon(getClass().getResource("/imagenes/fondo3.gif")).getImage();
+            
+            g.drawImage(imagen,0, 0, getWidth(), getHeight(),this);
+            
+            setOpaque(false);
+            
+            super.paint(g);
+        }
+    }

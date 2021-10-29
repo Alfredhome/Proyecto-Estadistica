@@ -34,6 +34,7 @@ public class Teorema1 extends javax.swing.JFrame {
         setBackground(new java.awt.Color(153, 255, 153));
         setIconImages(null);
 
+        jButton1.setBackground(new java.awt.Color(0, 204, 204));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jButton1.setText("Menú");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -50,9 +51,10 @@ public class Teorema1 extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 102, 204));
         jLabel2.setText("El número de permutaciones de n objetos es n!");
 
+        jButton3.setBackground(new java.awt.Color(0, 153, 204));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jButton3.setText("Ingrese un numero");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -61,6 +63,7 @@ public class Teorema1 extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(0, 153, 204));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jButton2.setText("Limpiar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -70,12 +73,12 @@ public class Teorema1 extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("El Factorial es:");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Factorial");
+        jLabel3.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel3.setText("TEOREMA 1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -88,8 +91,8 @@ public class Teorema1 extends javax.swing.JFrame {
                         .addGap(226, 226, 226)
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
-                        .addComponent(Respuesta, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
-                        .addGap(126, 126, 126))
+                        .addComponent(Respuesta)
+                        .addGap(136, 136, 136))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
@@ -98,7 +101,7 @@ public class Teorema1 extends javax.swing.JFrame {
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(19, 19, 19))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(141, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -146,7 +149,7 @@ public class Teorema1 extends javax.swing.JFrame {
     }//GEN-LAST:event_RespuestaActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-      int x=1;
+        int x=1;
         int xx=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el Numero)"));
         int r=1;
         while (x<=xx){
@@ -189,7 +192,7 @@ public class Teorema1 extends javax.swing.JFrame {
         @Override
         public void paint(Graphics g)
         {
-            imagen = new ImageIcon(getClass().getResource("/imagenes/fondo3.gif")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/imagenes/1.jpg")).getImage();
             
             g.drawImage(imagen,0, 0, getWidth(), getHeight(),this);
             
